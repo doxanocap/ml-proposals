@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--Codingthai.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drawing App</title>
+  </head>
+  <body>
+    <div class="info">
+      <div class="schema">
+          <div class="result">
+            <h1>Schema</h1>
+            <img alt="." src="../data/schema.png" height="200" width="200">
+          </div>
+          <div class="result">
+            <h1>Handled image</h1>
+            <img alt="." id="image" height="200" width="200" >
+          </div>
+      </div>
+
+        <div class="result">
+        <h1>Plot</h1>
+          <img alt="." id="plot" height="600" width="600" >
+        </div>
+       </div>
+    <div>
+      <canvas id="canvas" width="500" height="500"></canvas>
+      <div class="toolbox">
+        <button class="toolbox_child" id="decrease">-</button>
+        <span class="toolbox_child" id="size">10</span>
+        <button class="toolbox_child" id="increase">+</button>
+        <input  value="#ffffff" class="input_box" type="color" id="color">
+         <span class="toolbox_child" id="number">0</span>
+        <div>
+          <button class="buttons" id="clear">X</button>
+          <button class="buttons" id="send">send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
